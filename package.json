@@ -1,0 +1,30 @@
+{
+  "name": "find-group",
+  "version": "0.1.0",
+  
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.12.0",
+    "@emotion/styled": "^11.12.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@lottiefiles/dotlottie-react": "^0.8.1",
+    "framer-motion": "^11.3.8",
+    "mongoose": "^8.5.1",
+    "next": "14.2.5",
+    "prop-types": "^15.8.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.1",
+    "react-lottie": "^1.2.4"
+  }
+}

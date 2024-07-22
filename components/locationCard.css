@@ -1,0 +1,111 @@
+.card {
+  width: 300px;
+  height: 160px;
+  margin: auto;
+  background-color: #f8fbfe;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.card__content {
+  color: #000;
+  width: 100%;
+
+  & h3{
+    text-align: center;
+  }
+
+  & div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.location_input {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #e1d6d6;
+  color: #000;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button {
+  min-width: 120px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  padding: 8px 17px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background: #212121;
+
+  color: rgb(255, 255, 255, 0.66);
+
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.button::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.2;
+
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.button:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.button:hover::before {
+  opacity: 1;
+}

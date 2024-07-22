@@ -1,0 +1,131 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.lottie{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.register-form {
+  width: 40%;
+  padding-bottom: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000d7;
+  border: 4px double #ffffff23;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.form-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.input-container {
+  width: 80%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 80%;
+  margin: 5px 0;
+
+  & label {
+    color: rgb(229, 238, 245);
+    letter-spacing: 1.2px;
+    font-weight: 700;
+  }
+
+  & input {
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #222121;
+  }
+}
+
+.radio-btn{
+  width: 80%;
+  padding: 10px 20px;
+
+  & label{
+    margin: 0 20px 0 0;
+  }
+
+  & input{
+    margin: 0 10px;
+  }
+}
+
+.button {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+
+  & input{
+    margin: 0 10px;
+  }
+
+  & button {
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    background: linear-gradient(315deg, #343333, #2c2b2b);
+    box-shadow: -5px -5px 10px #101010, 5px 5px 10px #2c2828;
+  }
+}
+
+.error{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(203, 47, 47);
+}
+
+@media screen and (max-width: 1200px) {
+  .register-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .register-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .register-form {
+    width: 100%;
+    border: none;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+}
